@@ -2,7 +2,7 @@ from flask import current_app #обращаемся к текущему прил
 import requests
 
 def weather_by_city(city_name):
-    weather_url = current_app.config['WEATHER_API_KEY']
+    weather_url = current_app.config['WEATHER_API_URL']
     params = {
         'key': current_app.config['WEATHER_API_KEY'],
         'q': city_name,

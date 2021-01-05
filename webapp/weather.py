@@ -1,5 +1,6 @@
-from flask import current_app #обращаемся к текущему приложению
+from flask import current_app  # обращаемся к текущему приложению
 import requests
+
 
 def weather_by_city(city_name):
     weather_url = current_app.config['WEATHER_API_URL']
@@ -24,7 +25,7 @@ def weather_by_city(city_name):
         print('Сетевая ошибка')
         return False
     return False
-    
+
 
 if __name__ == '__main__':
     w = weather_by_city('Moscow,Russia')

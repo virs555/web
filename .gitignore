@@ -4,6 +4,7 @@ settings.py
 .idea/
 env/
 uvenv/
+uenv/
 venv/
 .DS_Store
 __pycache__/
